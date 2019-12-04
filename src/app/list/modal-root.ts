@@ -12,11 +12,11 @@ export class ModalRootPage implements OnInit, AfterViewInit  {
     rootPageParam: any;
 
     constructor(public navParams: NavParams) {
-        if (this.navParams.get('rootPage')) {
-            this.rootPage = this.navParams.get('rootPage');
-        }
         if (this.navParams.get('rootPageParam')) {
             this.rootPageParam = this.navParams.get('rootPageParam');
+        }
+		if (this.navParams.get('rootPage')) {
+            this.rootPage = this.navParams.get('rootPage');
         }
     }
 
